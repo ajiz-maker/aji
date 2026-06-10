@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZALXD OFFICIAL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#000,#08111f,#000);
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.logo{
+width:280px;
+max-width:90%;
+filter:drop-shadow(0 0 20px cyan);
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+50%{
+transform:translateY(-10px);
+}
+}
+
+h1{
+font-size:3rem;
+margin-top:20px;
+text-shadow:0 0 15px cyan;
+}
+
+.sub{
+opacity:.8;
+margin-top:10px;
+max-width:600px;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 35px;
+border:none;
+border-radius:50px;
+background:cyan;
+font-weight:bold;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+.menu{
+display:none;
+padding:30px;
+}
+
+.menu-title{
+text-align:center;
+margin-bottom:25px;
+font-size:2rem;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.1);
+padding:20px;
+border-radius:18px;
+backdrop-filter:blur(10px);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 0 20px cyan;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card a{
+color:cyan;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:25px;
+opacity:.7;
+}
+
+.badge{
+background:cyan;
+color:black;
+padding:4px 10px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<img src="zalxd-logo.png" class="logo">
+
+<h1>SELAMAT DATANG DI WEBSITE ZALXD</h1>
+
+<p class="sub">
+Website resmi ZALXD • Sosial Media • Pembayaran • Jasa Digital • Kontak
+</p>
+
+<button class="btn" onclick="openMenu()">
+KLIK DISINI UNTUK MELIHAT MENU
+</button>
+
+</section>
+
+<section id="menu" class="menu">
+
+<h2 class="menu-title">🔥 MENU ZALXD OFFICIAL 🔥</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>📱 WhatsApp</h3>
+<p>087861342589</p>
+<br>
+<a href="https://wa.me/6287861342589" target="_blank">
+Hubungi Sekarang
+</a>
+</div>
+
+<div class="card">
+<h3>📸 Instagram</h3>
+<p>@zzz</p>
+<br>
+<a href="https://instagram.com/zzz" target="_blank">
+Buka Instagram
+</a>
+</div>
+
+<div class="card">
+<h3>🎵 TikTok</h3>
+<p>@zall_ccp</p>
+<br>
+<a href="https://www.tiktok.com/@zall_ccp" target="_blank">
+Buka TikTok
+</a>
+</div>
+
+<div class="card">
+<h3>▶️ YouTube</h3>
+<p>Channel ZALXD</p>
+<br>
+<a href="#">Segera Hadir</a>
+</div>
+
+<div class="card">
+<h3>🎮 Akun Game</h3>
+<p>Informasi akun dan layanan game.</p>
+<br>
+<span class="badge">GAME</span>
+</div>
+
+<div class="card">
+<h3>💳 DANA</h3>
+<p>Pembayaran via DANA</p>
+<br>
+<a href="#">Lihat Detail</a>
+</div>
+
+<div class="card">
+<h3>🏦 SeaBank</h3>
+<p>Pembayaran SeaBank</p>
+<br>
+<a href="#">Lihat Detail</a>
+</div>
+
+<div class="card">
+<h3>🏛️ BCA</h3>
+<p>Pembayaran Bank BCA</p>
+<br>
+<a href="#">Lihat Detail</a>
+</div>
+
+<div class="card">
+<h3>🤖 Bot WhatsApp</h3>
+<p>Jasa pembuatan dan pengembangan bot.</p>
+<br>
+<a href="#">Info Layanan</a>
+</div>
+
+<div class="card">
+<h3>🎨 Jasa Edit</h3>
+<p>Logo, banner, poster, thumbnail.</p>
+<br>
+<a href="#">Pesan Sekarang</a>
+</div>
+
+<div class="card">
+<h3>🌐 Website</h3>
+<p>Landing page dan website sederhana.</p>
+<br>
+<a href="#">Lihat Portofolio</a>
+</div>
+
+<div class="card">
+<h3>🛒 Produk Digital</h3>
+<p>Template dan file digital.</p>
+<br>
+<a href="#">Lihat Produk</a>
+</div>
+
+<div class="card">
+<h3>⭐ Testimoni</h3>
+<p>Ulasan pelanggan.</p>
+<br>
+<a href="#">Buka</a>
+</div>
+
+<div class="card">
+<h3>📞 Customer Service</h3>
+<p>Layanan bantuan pelanggan.</p>
+<br>
+<a href="https://wa.me/6287861342589">
+Hubungi CS
+</a>
+</div>
+
+<div class="card">
+<h3>📢 Informasi Terbaru</h3>
+<p>Update layanan dan promo.</p>
+<br>
+<a href="#">Lihat Update</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 ZALXD OFFICIAL • Powered by ZALXD
+</footer>
+
+<script>
+function openMenu(){
+document.getElementById('menu').style.display='block';
+document.getElementById('menu').scrollIntoView({
+behavior:'smooth'
+});
+}
+</script>
+
+</body>
+</html>
