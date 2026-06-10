@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ZALXD OFFICIAL</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -16,13 +17,21 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#000,#08111f,#000);
+background:linear-gradient(135deg,#000428,#004e92,#000);
+background-size:400% 400%;
+animation:bg 10s ease infinite;
 color:white;
 overflow-x:hidden;
 }
 
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
 .hero{
-min-height:100vh;
+height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -32,44 +41,58 @@ padding:20px;
 }
 
 .logo{
-width:280px;
+width:220px;
+height:220px;
+border-radius:50%;
+background:linear-gradient(45deg,cyan,blue,purple);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:80px;
+font-weight:900;
+box-shadow:0 0 40px cyan;
+animation:spin 8s linear infinite;
+}
+
+@keyframes spin{
+100%{
+transform:rotate(360deg);
+}
+}
+
+.hero img{
+width:300px;
 max-width:90%;
-filter:drop-shadow(0 0 20px cyan);
-animation:float 3s ease-in-out infinite;
-}
-
-@keyframes float{
-50%{
-transform:translateY(-10px);
-}
-}
-
-h1{
-font-size:3rem;
+border-radius:20px;
 margin-top:20px;
-text-shadow:0 0 15px cyan;
+box-shadow:0 0 30px cyan;
 }
 
-.sub{
-opacity:.8;
+.hero h1{
+margin-top:20px;
+font-size:3rem;
+text-shadow:0 0 20px cyan;
+}
+
+.hero p{
 margin-top:10px;
-max-width:600px;
+opacity:.8;
 }
 
 .btn{
-margin-top:30px;
+margin-top:25px;
 padding:15px 35px;
 border:none;
 border-radius:50px;
 background:cyan;
-font-weight:bold;
 font-size:18px;
+font-weight:bold;
 cursor:pointer;
 transition:.3s;
 }
 
 .btn:hover{
-transform:scale(1.08);
+transform:scale(1.1);
 }
 
 .menu{
@@ -77,7 +100,7 @@ display:none;
 padding:30px;
 }
 
-.menu-title{
+.title{
 text-align:center;
 margin-bottom:25px;
 font-size:2rem;
@@ -90,17 +113,17 @@ gap:20px;
 }
 
 .card{
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,255,255,.1);
-padding:20px;
-border-radius:18px;
+background:rgba(255,255,255,.08);
 backdrop-filter:blur(10px);
+border-radius:20px;
+padding:20px;
 transition:.3s;
+border:1px solid rgba(255,255,255,.1);
 }
 
 .card:hover{
-transform:translateY(-6px);
-box-shadow:0 0 20px cyan;
+transform:translateY(-8px);
+box-shadow:0 0 25px cyan;
 }
 
 .card h3{
@@ -115,34 +138,54 @@ font-weight:bold;
 
 footer{
 text-align:center;
-padding:25px;
-opacity:.7;
+padding:30px;
+opacity:.8;
 }
 
-.badge{
-background:cyan;
-color:black;
-padding:4px 10px;
-border-radius:20px;
-font-size:12px;
-font-weight:bold;
+.running{
+background:black;
+padding:10px;
+overflow:hidden;
+white-space:nowrap;
 }
+
+.running span{
+display:inline-block;
+animation:jalan 15s linear infinite;
+}
+
+@keyframes jalan{
+100%{
+transform:translateX(-100%);
+}
+}
+
 </style>
 </head>
 
 <body>
 
+<div class="running">
+<span>
+🔥 SELAMAT DATANG DI WEBSITE RESMI ZALXD • JASA EDIT • BOT WHATSAPP • PRODUK DIGITAL • PEMBAYARAN • SOCIAL MEDIA 🔥
+</span>
+</div>
+
 <section class="hero">
 
-<img src="zalxd-logo.png" class="logo">
+<div class="logo">
+ZX
+</div>
+
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=900" alt="Banner">
 
 <h1>SELAMAT DATANG DI WEBSITE ZALXD</h1>
 
-<p class="sub">
-Website resmi ZALXD • Sosial Media • Pembayaran • Jasa Digital • Kontak
+<p>
+Website Pribadi • Toko Digital • Jasa Online • Social Media
 </p>
 
-<button class="btn" onclick="openMenu()">
+<button class="btn" onclick="bukaMenu()">
 KLIK DISINI UNTUK MELIHAT MENU
 </button>
 
@@ -150,7 +193,9 @@ KLIK DISINI UNTUK MELIHAT MENU
 
 <section id="menu" class="menu">
 
-<h2 class="menu-title">🔥 MENU ZALXD OFFICIAL 🔥</h2>
+<div class="title">
+🔥 MENU ZALXD OFFICIAL 🔥
+</div>
 
 <div class="grid">
 
@@ -190,81 +235,80 @@ Buka TikTok
 
 <div class="card">
 <h3>🎮 Akun Game</h3>
-<p>Informasi akun dan layanan game.</p>
-<br>
-<span class="badge">GAME</span>
+<p>Info akun dan layanan game.</p>
 </div>
 
 <div class="card">
 <h3>💳 DANA</h3>
-<p>Pembayaran via DANA</p>
-<br>
-<a href="#">Lihat Detail</a>
+<p>Pembayaran DANA</p>
 </div>
 
 <div class="card">
 <h3>🏦 SeaBank</h3>
 <p>Pembayaran SeaBank</p>
-<br>
-<a href="#">Lihat Detail</a>
 </div>
 
 <div class="card">
 <h3>🏛️ BCA</h3>
-<p>Pembayaran Bank BCA</p>
-<br>
-<a href="#">Lihat Detail</a>
+<p>Pembayaran BCA</p>
 </div>
 
 <div class="card">
 <h3>🤖 Bot WhatsApp</h3>
-<p>Jasa pembuatan dan pengembangan bot.</p>
-<br>
-<a href="#">Info Layanan</a>
+<p>Jasa pembuatan bot WA.</p>
 </div>
 
 <div class="card">
 <h3>🎨 Jasa Edit</h3>
-<p>Logo, banner, poster, thumbnail.</p>
-<br>
-<a href="#">Pesan Sekarang</a>
+<p>Logo, Banner, Poster, Thumbnail.</p>
 </div>
 
 <div class="card">
 <h3>🌐 Website</h3>
-<p>Landing page dan website sederhana.</p>
-<br>
-<a href="#">Lihat Portofolio</a>
+<p>Pembuatan website sederhana.</p>
 </div>
 
 <div class="card">
-<h3>🛒 Produk Digital</h3>
+<h3>📦 Produk Digital</h3>
 <p>Template dan file digital.</p>
-<br>
-<a href="#">Lihat Produk</a>
 </div>
 
 <div class="card">
 <h3>⭐ Testimoni</h3>
-<p>Ulasan pelanggan.</p>
-<br>
-<a href="#">Buka</a>
+<p>Review pelanggan.</p>
 </div>
 
 <div class="card">
 <h3>📞 Customer Service</h3>
 <p>Layanan bantuan pelanggan.</p>
-<br>
 <a href="https://wa.me/6287861342589">
 Hubungi CS
 </a>
 </div>
 
 <div class="card">
-<h3>📢 Informasi Terbaru</h3>
-<p>Update layanan dan promo.</p>
-<br>
-<a href="#">Lihat Update</a>
+<h3>🚀 Promo Terbaru</h3>
+<p>Diskon layanan digital.</p>
+</div>
+
+<div class="card">
+<h3>📚 Portofolio</h3>
+<p>Hasil karya dan project.</p>
+</div>
+
+<div class="card">
+<h3>🎁 Giveaway</h3>
+<p>Event dan hadiah menarik.</p>
+</div>
+
+<div class="card">
+<h3>📰 Berita ZALXD</h3>
+<p>Update terbaru website.</p>
+</div>
+
+<div class="card">
+<h3>💎 Member Premium</h3>
+<p>Fitur dan keuntungan khusus.</p>
 </div>
 
 </div>
@@ -272,16 +316,18 @@ Hubungi CS
 </section>
 
 <footer>
-© 2026 ZALXD OFFICIAL • Powered by ZALXD
+© 2026 ZALXD OFFICIAL | Powered By ZALXD
 </footer>
 
 <script>
-function openMenu(){
-document.getElementById('menu').style.display='block';
-document.getElementById('menu').scrollIntoView({
-behavior:'smooth'
+
+function bukaMenu(){
+document.getElementById("menu").style.display="block";
+document.getElementById("menu").scrollIntoView({
+behavior:"smooth"
 });
 }
+
 </script>
 
 </body>
